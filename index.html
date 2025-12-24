@@ -1,25 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Royal Residency | Luxury Hotel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="index.css">
+  <!-- <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; color: #333; }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('https://wallpaperaccess.com/full/8311986.jpg') center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+    header button {
+      padding: 12px 30px;
+      background: #c9a24d;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-weight: 500;
+      cursor: pointer;
+      
+    align-content: right;
+    }
+
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      letter-spacing: 3px;
+    }
+
+    header p { font-size: 1.2rem; margin: 20px 0; }
+
+    header a {
+      padding: 12px 30px;
+      background: #c9a24d;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 500;
+    }
+
+    section { padding: 80px 10%; }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .section-title p { color: #777; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      background: #fff;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card .content { padding: 20px; }
+
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 8px;
+    }
+
+    .card p { color: #666; font-size: 0.95rem; }
+
+    .about {
+      background: #f9f7f3;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    footer h3 {
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+     .content button {
+      padding: 12px 30px;
+      background: #c9a24d;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-weight: 500;
+    justify-content: center;
+      align-items: center;
+      text-align: center;
+     }
+      
+  </style> -->
 </head>
 <body>
-   <nav>
-    <div class="logo">My Site</div>
-    <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
-<div class="menu">
-    <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-    <a href="#">help</a>
-</div>
+
+  <!-- HERO SECTION -->
+  <header>
+    <h1>THE ROYAL RESIDENCY</h1>
+    <p>Experience Luxury, Comfort & Elegance</p>
+    <a href="#rooms">Explore Our Hotel</a><br><br>
+    <form action="booking.html">
+<button>BOOK NOW!</button></form>
+  
+  </header>
+
+  <!-- BOOKING BOX -->
+  <section style="margin-top:-60px;">
+    <div style="background:#fff;padding:30px;border-radius:20px;box-shadow:0 15px 40px rgba(0,0,0,0.15);max-width:900px;margin:auto;">
+      <h2 style="text-align:center;font-family:'Playfair Display',serif;margin-bottom:20px;">Book Your Stay</h2>
+      <form style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;">
+        <div>
+          <label>Check-in Time</label>
+          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;">
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>01:00 PM</option>
+          </select>
+        </div>
+        <div>
+          <label>Check-out Time</label>
+          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;">
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+          </select>
+        </div>
+        <div>
+          <label>Room Type</label>
+          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;">
+            <option>Single Room</option>
+            <option>Deluxe Room</option>
+            <option>Executive Room</option>
+            <option>Luxury Suite</option>
+          </select>
+        </div>
+        <div style="display:flex;align-items:flex-end;">
+          <button type="button" style="width:100%;padding:12px;background:#c9a24d;border:none;border-radius:25px;color:#fff;font-weight:500;cursor:pointer;">Check Availability</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="section-title">
+      <h2>Welcome to The Royal Residency</h2>
+      <p>A place where royal comfort meets modern luxury</p>
+    </div>
+    <p>
+      The Royal Residency is a premium luxury hotel designed for guests who seek elegance, comfort, and world‑class hospitality.
+      From beautifully designed rooms to fine dining and relaxing leisure facilities, every detail is crafted to make your stay memorable.
+    </p>
+  </section>
+
+  <!-- ROOMS -->
+  <section id="rooms">
+    <div class="section-title">
+      <h2>Our Rooms</h2>
+      <p>Relax in style and comfort</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80" alt="Deluxe Room">
+        <div class="content">
+          <h3>Deluxe Room</h3>
+          <p>Elegant interiors with modern amenities for a comfortable stay.</p>
+          <button>$5800</button>
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Luxury Suite">
+        <div class="content">
+          <h3>Luxury Suite</h3>
+          <p>Spacious suites offering royal comfort and breathtaking views.</p>
+            <button>$7500</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Executive Room">
+        <div class="content">
+          <h3>Executive Room</h3>
+          <p>Perfect blend of luxury and functionality for business travelers.</p>
+          <button>$6900</button>
+        </div>
+      </div>
+      <br><div class="card">
+            <img src="https://images.unsplash.com/photo-1559599238-308793637427?auto=format&fit=crop&w=800&q=80" alt="Spa">
+            <div class="content">
+                <h3>Regular Room</h3>
+                <p>Easy and comfortable stay for 2 people at your demand.</p><br>
+                <button>$3400</button>
+            </div>
+        
+      </div>
+      <br><div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.7irKaSESaO2vdOB13R_1zAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"  alt="Single Room">
+        <div class="content">
+            <h3>Single Room</h3>
+        <p>Single Room is thoughtfully designed for solo travelers who value privacy and elegance</p><br>
+        <button>$2500</button>
+      </div>
+    </div>
+    <br> <div class="card">
+        <img src="https://i.pinimg.com/originals/17/01/10/170110aea2f680ce27d2fcfb63a4aa38.jpg" alt="kids room">
+        <div class="content">
+            <h3>Kids Room</h3>
+            <p>Kids enjoying their space away from home,feels good to see them happy</p><br>
+            <button>$5300</button>
+        </div>
+    </div>
+  </section>
     
-   </nav>
+
+  <!-- FACILITIES -->
+  <section style="background:#f9f9f9;">
+    <div class="section-title">
+      <h2>Our Facilities</h2>
+      <p>Everything you need for a perfect stay</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <img src="https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2018/10/02/1412/Grand-Hyatt-Kuala-Lumpur-P269-THIRTY8-Sunset.jpg/Grand-Hyatt-Kuala-Lumpur-P269-THIRTY8-Sunset.16x9.jpg?imwidth=1920" alt="Restaurant">
+        <div class="content">
+          <h3>Fine Dining</h3>
+          <p>Enjoy delicious cuisines prepared by expert chefs.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/originals/34/86/04/3486046c7cad4b6c5e1481a3f9b0a6ed.jpg" alt="Swimming Pool">
+        <div class="content">
+          <h3>Swimming Pool</h3>
+          <p>Relax and unwind in our luxurious outdoor pool.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=800&q=80" alt="Gym">
+        <div class="content">
+          <h3>Fitness Center</h3>
+          <p>Stay fit with modern gym equipment and trainers.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cache.marriott.com/content/dam/marriott-renditions/SYXEB/syxeb-spa-5353-hor-wide.jpg" alt="Spa">
+        <div class="content">
+          <h3>Spa & Wellness</h3>
+          <p>Rejuvenate your body and mind with our spa services.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://easydecor101.com/wp-content/uploads/2020/12/indoor-kids-play-area-fresh-iplayco-indoor-playground-equipment-of-indoor-kids-play-area.jpg" alt="playarea">
+        <div class="content">
+          <h3>Kids Playarea</h3>
+          <p>Creating a area exclusively for kids who can enjoy their space and have fun.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://media.timeout.com/images/105819546/image.jpg" alt="Movie Theater">
+        <div class="content">
+          <h3>Movie Theater</h3>
+          <p>State-of-the-art facilities for your movie showtime and entertainment.</p>
+      </div>
+    </div>
+  </section>
     
+
+  <!-- FOOTER -->
+  <footer><div style="display: flex; justify-content: space-between; align-items: center;">
+    <div><h3 style="color:white">THE ROYAL RESIDENCY</h3>
+    <p style="color:white">Luxury Hotel & Resort</p>
+    <p style="color:white">© 2025 The Royal Residency. All Rights Reserved.</p></div>
+    <br><div><h3 style="color:white">Contact Us</h3>
+   <p style="color:white">&nbsp;<i class="fa-brands fa-whatsapp"></i>+978 58742166</p>
+    <p style="color:white">&nbsp;<i class="fa-solid fa-phone"></i> +974 152874446</p>
+    <p style="color:white">&nbsp;<i class="fa-brands fa-instagram"></i>the__royalresidency</p></div>
+    </div>
+  </footer>
+
+
 </body>
- <!-- max width mlb uske neeche width --> 
 </html>
